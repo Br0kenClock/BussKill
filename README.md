@@ -74,3 +74,12 @@ $testOnly = $false
 After that, save the script file and restart the script. Connect the drive, wait for it to arm, and unplug it to test locking. 
 
 **Changes to the file only take effect after restarting the script.**
+
+
+## Working Mechanism
+1. The script check connected drives and compares the `PNPDeviceID` values with the configured ID.
+2. Matching drive arms the monitor.
+3. If an armed drive disappears, the script disarms and call the Windows `LockWorkStation()` function.
+4. The monitor continues running and waits for the drive to reconnect.
+
+The polling loop pauses for 500 millisecond, around half a second, between checks. Actual detection time also depends on Windows device updates and query executions. Reconnecting the drive only rearms monitoring, it does not unlock the PC.
