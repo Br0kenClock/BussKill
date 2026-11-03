@@ -48,6 +48,29 @@ $targetId = 'YOUR_USB_DEVICE_ID'
 make sure to keep the id value within the single quotes and preserve it's backslashes.
 
 Then start with test mode enabled:
+```powershell
 $testOnly = $true
+```
 
 ### 4. Test Detection
+Run: 
+``` powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\src\BUSSkill.ps1"
+```
+
+with the drive connected, wait for:
+``` Plain text
+ARMED: USB drive detected.
+```
+unplug the drive. In test mode, the script will print a removal message without locking your PC.
+Then reconnect the drive to confirm that it rearms.
+Press Ctrl + C to stop monitoring.
+
+### 5. Enable locking
+Change the configuration to:
+```powershell
+$testOnly = $false
+```
+After that, save the script file and restart the script. Connect the drive, wait for it to arm, and unplug it to test locking. 
+
+**Changes to the file only take effect after restarting the script.**
