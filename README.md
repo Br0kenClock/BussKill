@@ -8,6 +8,13 @@ You can modify the script to request a shutdown, or a complete wiping of your PC
 ## About
 This project explores a USB device detection system, utilizing Windows automation and powershell scripting. At first, It started with putting a PC to sleep on removal of a specific USB, as a proof of concept, and later got updated to lock the PC instead.
 
+## Inspiration
+This project was heavily inspired by Proton Privacy’s YouTube video, [“Seven Gadgets a Security Expert Actually Uses”](https://youtu.be/WfVPjNAbkNY?si=YrIvuY2vHf2jZQQH), which sparked my interest in building a USB-triggered security tool, BUSSkill sounds cooler, of my own.
+
+While researching possible resources for implementation, I found [Neil Brown’s guide to implementing BusKill on Debian 11](https://neilzone.co.uk/2022/01/implementing-buskill-shutting-down-a-debian-11-bullseye-machine-when-a-specific-usb-device-is-removed/). Although the guide provided a useful starting point at first, its software setup was specific to Linux distro, Debian. Since i use Windows, unfortunately, I scoured the internet to find resource for implementation of similar functionality using PowerShell.
+
+This repository documents my the steps i took, setup instructions, and troubleshooting process for creating a Windows-based tool that responds to the removal of a designated USB device. Another way, an easier way, is to download the software from [Buskill's](https://github.com/BusKill/buskill-app) github repo. 
+
 ## Features
 - Monitors a specific device using its Plug and Play device ID.
 - Arms automatically whenever the configured drive is detected.
