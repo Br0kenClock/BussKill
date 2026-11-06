@@ -16,11 +16,13 @@ This project explores a USB device detection system, utilizing Windows automatio
 - Includes a test mode for checking detection using shell without locking.
 - Can run in the background through Windows Task Scheduler.
 
-## Requirements
+## Hardware Requirements
+![BussKill project screenshot](https://github.com/Br0kenClock/BussKill/blob/357504e7867192d7511ba8faa5e7e0885b856f04/image.png?raw=true)
+
+
+## Software Requirements
 - Windows 10 or 11
 - Windows PowerShell
-- A USB flash drive {preferably any low storage capacity drive}.
-- any required adapter {magnetic adapter preferred}
 - A windows admin account with a password, PIN, or other sign-in method.
 
 ## Getting Started with it
