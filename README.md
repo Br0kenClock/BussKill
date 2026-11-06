@@ -16,7 +16,7 @@ This project explores a USB device detection system, utilizing Windows automatio
 - Includes a test mode for checking detection using shell without locking.
 - Can run in the background through Windows Task Scheduler.
 
-##Requirements
+## Requirements
 - Windows 10 or 11
 - Windows PowerShell
 - A USB flash drive {preferably any low storage capacity drive}.
