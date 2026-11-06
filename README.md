@@ -19,10 +19,10 @@ This project explores a USB device detection system, utilizing Windows automatio
 ## Hardware Requirements
 ![BussKill project screenshot](https://github.com/Br0kenClock/BussKill/blob/357504e7867192d7511ba8faa5e7e0885b856f04/image.png?raw=true)
 
-- USB flash drive {low storage capacity option preferred}
+- USB flash drive ( low storage capacity option preferred )
 - magnetic USB adapter
 - wallet chain of your preference
-- Carabiner [optional]
+- Carabiner ( optional )
 
 ## Software Requirements
 - Windows 10 or 11
