@@ -11,7 +11,7 @@ This project explores a USB device detection system, utilizing Windows automatio
 ## Inspiration
 This project was heavily inspired by Proton Privacy’s YouTube video, [“Seven Gadgets a Security Expert Actually Uses”](https://youtu.be/WfVPjNAbkNY?si=YrIvuY2vHf2jZQQH), which sparked my interest in building a USB-triggered security tool, BUSSkill sounds cooler, of my own.
 
-While researching possible resources for implementation, I found [Neil Brown’s guide to implementing BusKill on Debian 11](https://neilzone.co.uk/2022/01/implementing-buskill-shutting-down-a-debian-11-bullseye-machine-when-a-specific-usb-device-is-removed/). Although the guide provided a useful starting point at first, its software setup was specific to Linux distro, Debian. Since i use Windows, unfortunately, I scoured the internet to find resource for implementation of similar functionality using PowerShell.
+While researching possible resources for implementation, I found [Neil Brown’s guide to implementing BusKill](https://neilzone.co.uk/2022/01/implementing-buskill-shutting-down-a-debian-11-bullseye-machine-when-a-specific-usb-device-is-removed/). Although the guide provided a useful starting point at first, its software setup was specific to Linux distro, Debian. Since i use Windows, unfortunately, I scoured the internet to find resource for implementation of similar functionality using PowerShell.
 
 This repository documents my the steps i took, setup instructions, and troubleshooting process for creating a Windows-based tool that responds to the removal of a designated USB device. Another way, an easier way, is to download the software from [Buskill's](https://github.com/BusKill/buskill-app) github repo. 
 
